@@ -3228,8 +3228,8 @@ figcaption {
   margin-bottom: 100px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 .team-item {
@@ -4379,6 +4379,10 @@ figcaption {
 .side-margins {
   margin-right: 40px;
   margin-left: 40px;
+}
+
+.tagline {
+  text-transform: uppercase;
 }
 
 .instagram-powered-mobile {
@@ -7609,28 +7613,15 @@ figcaption {
   }
 }
 
-#w-node-_72db7d5e-67ba-1361-b1aa-1a07ac8f1178-406c5f63 {
-  -ms-grid-column-span: 8;
-  grid-column-end: 10;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-}
-
-#w-node-_2902cb79-a9b6-8bb5-8139-154e912812e1-406c5f63 {
+#w-node-cea4da6d-84f4-31ec-c8cf-a05e9d8ee10c-406c5f63 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
   -ms-grid-row: span 1;
   grid-row-start: span 1;
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
-  -ms-grid-column: span 10;
-  grid-column-start: span 10;
-  -ms-grid-column-span: 10;
-  grid-column-end: span 10;
-  -ms-grid-row-align: auto;
-  align-self: auto;
 }
 
 #w-node-_4a3ac6c7-5e8f-de75-6abc-2c50aaa9521b-406c5f63 {
@@ -8249,17 +8240,6 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-_72db7d5e-67ba-1361-b1aa-1a07ac8f1178-406c5f63 {
-    -ms-grid-column: span 10;
-    grid-column-start: span 10;
-    -ms-grid-column-span: 10;
-    grid-column-end: span 10;
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-  }
-
   #w-node-b6230ac0-ec81-8bee-055a-652ff37f37d8-406c5f63 {
     -ms-grid-column: span 4;
     grid-column-start: span 4;
@@ -8394,17 +8374,6 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_72db7d5e-67ba-1361-b1aa-1a07ac8f1178-406c5f63 {
-    -ms-grid-column: span 10;
-    grid-column-start: span 10;
-    -ms-grid-column-span: 10;
-    grid-column-end: span 10;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-  }
-
   #w-node-_9897b53d-640e-2851-a0ad-47cae3125394-406c5f63 {
     -ms-grid-column: span 2;
     grid-column-start: span 2;
