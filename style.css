@@ -2206,6 +2206,8 @@ figcaption {
   );
   background-image: linear-gradient(90deg, #fa5853, #f46692);
   text-align: right;
+  letter-spacing: 1vw;
+  text-transform: capitalize;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2229,6 +2231,8 @@ figcaption {
   );
   background-image: linear-gradient(90deg, #f46692, #ffc444);
   text-align: left;
+  letter-spacing: 1vw;
+  text-transform: capitalize;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2256,6 +2260,7 @@ figcaption {
 .section-hero {
   position: relative;
   padding-top: 3em;
+  letter-spacing: 1px;
 }
 
 .content {
@@ -3112,7 +3117,6 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background-image: linear-gradient(349deg, #fa5853, #f46692 52%, #ffc444);
 }
 
 .app-icon {
@@ -3884,6 +3888,14 @@ figcaption {
 
   figure {
     margin-top: 20px;
+  }
+
+  .hero-text._1 {
+    letter-spacing: 1vw;
+  }
+
+  .hero-text._2 {
+    letter-spacing: 1px;
   }
 
   .content.centered {
