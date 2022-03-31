@@ -2763,8 +2763,6 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -2779,11 +2777,19 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   border-style: solid;
-  border-width: 3px;
+  border-width: 0px;
   border-color: #fa5853;
   border-radius: 17px;
-  background-color: #dadada;
-  background-image: none;
+  background-color: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fa5853),
+    color-stop(50%, #f46692),
+    to(#ffc444)
+  );
+  background-image: linear-gradient(90deg, #fa5853, #f46692 50%, #ffc444);
   outline-color: #fa5853;
   outline-offset: 0px;
   outline-style: none;
@@ -3881,10 +3887,13 @@ figcaption {
 .text-grow {
   -webkit-transition: font-size 375ms ease;
   transition: font-size 375ms ease;
+  font-family: Manrope, sans-serif;
+  color: #f4f8fb;
+  font-weight: 700;
 }
 
 .text-grow:hover {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .link-2 {
