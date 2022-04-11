@@ -98,6 +98,22 @@
       </div>
       <div class="section">
         <div class="container"><div style="opacity: 0" class="on-load-content"></div></div>
+        <div class="w-embed w-script">
+          <div id="profile-embed"></div>
+          <script>
+            var o_profile_options = {
+              id: "Outseta",
+              domain: "jonnybot.outseta.com",
+              load: "profile",
+              profile: {
+                id: "profile_embed",
+                mode: "embed",
+                selector: "#profile-embed",
+              },
+            };
+          </script>
+          <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_profile_options"></script>
+        </div>
       </div>
       <div class="footer">
         <div class="container w-container">
