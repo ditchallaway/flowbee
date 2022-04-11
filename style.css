@@ -2087,7 +2087,7 @@ figcaption {
 }
 
 .nav-logo {
-  height: 32px;
+  height: 22px;
 }
 
 .nav-link {
@@ -2164,6 +2164,7 @@ figcaption {
   margin-right: auto;
   margin-left: auto;
   padding: 3rem 1em;
+  text-align: center;
 }
 
 .container.nav-container {
@@ -2304,10 +2305,10 @@ figcaption {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .link {
@@ -2391,6 +2392,17 @@ figcaption {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+
+.brand.w--current {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu-button {
@@ -2700,10 +2712,10 @@ figcaption {
 }
 
 .button {
-  min-width: 180px;
+  min-width: 150px;
   margin-right: 0px;
   margin-bottom: 0px;
-  padding: 20px;
+  padding: 15px 10px;
   border-radius: 5px;
   background-color: #fa5853;
   background-image: -webkit-gradient(
@@ -2779,7 +2791,7 @@ figcaption {
   border-style: solid;
   border-width: 0px;
   border-color: #fa5853;
-  border-radius: 17px;
+  border-radius: 5px;
   background-color: transparent;
   background-image: -webkit-gradient(
     linear,
@@ -2794,7 +2806,7 @@ figcaption {
   outline-offset: 0px;
   outline-style: none;
   outline-width: 5px;
-  color: #fa5853;
+  color: #f4f8fb;
   font-size: 16px;
   font-weight: 400;
 }
@@ -3245,6 +3257,10 @@ figcaption {
   opacity: 1;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.main-heading {
+  font-size: 75px;
 }
 
 .grid-5-col {
@@ -3759,11 +3775,11 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -3904,13 +3920,14 @@ figcaption {
 }
 
 .embed-box {
-  display: block;
-  min-height: auto;
-  -webkit-box-orient: vertical;
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -3951,6 +3968,19 @@ figcaption {
 .container-3 {
   height: 200px;
   max-height: 330px;
+}
+
+.text-block {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+}
+
+.italic-text {
+  text-align: left;
+}
+
+.heading-2 {
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
