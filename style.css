@@ -1108,6 +1108,9 @@ textarea.w-select {
   background-color: transparent;
   padding: 0;
 }
+.w-background-video--control > [hidden] {
+  display: none !important;
+}
 .w-slider {
   position: relative;
   height: 300px;
@@ -1951,6 +1954,121 @@ textarea.w-select {
   grid-column-gap: 16px;
 }
 
+.w-checkbox {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.w-checkbox::before {
+  content: " ";
+  display: table;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+}
+
+.w-checkbox::after {
+  content: " ";
+  display: table;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  clear: both;
+}
+
+.w-checkbox-input {
+  float: left;
+  margin-bottom: 0px;
+  margin-left: -20px;
+  margin-right: 0px;
+  margin-top: 4px;
+  line-height: normal;
+}
+
+.w-checkbox-input--inputType-custom {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-color: #ccc;
+  border-bottom-color: #ccc;
+  border-left-color: #ccc;
+  border-right-color: #ccc;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 12px;
+  height: 12px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-checked {
+  background-color: #3898ec;
+  border-top-color: #3898ec;
+  border-bottom-color: #3898ec;
+  border-left-color: #3898ec;
+  border-right-color: #3898ec;
+  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-focus {
+  box-shadow: 0px 0px 3px 1px #3898ec;
+}
+
+.w-form-formradioinput--inputType-custom {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-color: #ccc;
+  border-bottom-color: #ccc;
+  border-left-color: #ccc;
+  border-right-color: #ccc;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  width: 12px;
+  height: 12px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+  box-shadow: 0px 0px 3px 1px #3898ec;
+}
+
+.w-form-formradioinput--inputType-custom.w--redirected-checked {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-top-color: #3898ec;
+  border-bottom-color: #3898ec;
+  border-left-color: #3898ec;
+  border-right-color: #3898ec;
+}
+
 body {
   padding-top: 75px;
   background-color: #fff;
@@ -2101,6 +2219,7 @@ figcaption {
 
 .nav-logo {
   height: 22px;
+  margin-right: 6px;
 }
 
 .nav-link {
@@ -2398,12 +2517,15 @@ figcaption {
 
 .brand {
   z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 30px;
   padding-top: 0px;
   padding-bottom: 0px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -2423,10 +2545,7 @@ figcaption {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -4027,6 +4146,591 @@ figcaption {
   text-align: center;
 }
 
+.step-title-wrap---brix {
+  margin-bottom: 40px;
+}
+
+.form-step-progress-bar-mobile---brix {
+  display: none;
+  width: 100%;
+  min-height: 6px;
+  border-radius: 50px;
+  background-color: #eff0f6;
+}
+
+.form-step-number---brix {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 34px;
+  height: 34px;
+  margin-right: 18px;
+  margin-left: 18px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background-color: #eff0f6;
+  color: #6f6c90;
+  font-size: 16px;
+}
+
+.form-step-number---brix.completed---brix {
+  background-color: #4a3aff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.checkbox---brix {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 5;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px 1px rgba(19, 18, 66, 0.07);
+  opacity: 1;
+  -webkit-transition: border-color 350ms ease, all 350ms ease;
+  transition: border-color 350ms ease, all 350ms ease;
+  cursor: pointer;
+}
+
+.checkbox---brix:hover {
+  border-color: #bfbaff;
+}
+
+.checkbox---brix.w--redirected-checked {
+  border-width: 2px;
+  border-color: #4a3aff;
+  background-color: transparent;
+  background-image: none;
+  opacity: 1;
+}
+
+.checkbox---brix.w--redirected-focus {
+  border-width: 2px;
+  border-color: #4a3aff;
+  box-shadow: 0 4px 10px 0 rgba(31, 37, 89, 0.07);
+}
+
+.mask---brix {
+  overflow: hidden;
+  width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.multi-step-form-wrapper---brix {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.multi-step-form---brix {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 34px;
+  background-color: #fff;
+  box-shadow: 0 54px 34px 0 rgba(74, 58, 255, 0.02),
+    0 1px 26px 0 rgba(20, 20, 43, 0.02), 0 16px 26px 0 rgba(19, 18, 66, 0.02);
+}
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-step-progress-bar---brix {
+  width: 100%;
+  min-height: 6px;
+  border-radius: 50px;
+  background-color: #eff0f6;
+}
+
+.form-step-progress-bar---brix.complete-step---brix {
+  background-color: #4a3aff;
+}
+
+.form-step-progress-bar---brix.current-step---brix {
+  width: 50%;
+  background-color: #4a3aff;
+}
+
+.slide---brix {
+  margin-right: 80px;
+}
+
+.step-title---brix {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.multi-step-form-error-message---brix {
+  margin-top: 140px;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.completed-form-illustrations---brix {
+  margin-bottom: 18px;
+}
+
+.container-default {
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.title-container---brix {
+  max-width: 518px;
+  text-align: center;
+}
+
+.multi-step-form-block---brix {
+  width: 100%;
+  min-height: 44vw;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.select-item-icon---brix {
+  margin-right: 12px;
+}
+
+.cloneable-container-default {
+  min-height: 624px;
+  padding-top: 75px;
+  padding-bottom: 200px;
+  border-radius: 20px;
+  background-color: #f7f7fb;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.submit-button---brix {
+  padding: 20px 40px 21px;
+  border-radius: 500px;
+  background-color: #4a3aff;
+  box-shadow: 0 3px 12px 0 rgba(74, 58, 255, 0.18);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.submit-button---brix:hover {
+  box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.3);
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}
+
+.step-paragraph---brix {
+  margin-bottom: 0px;
+}
+
+.section-2 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.section-2.cloneables-listing {
+  padding-top: 0px;
+  padding-bottom: 140px;
+}
+
+.multi-step-form-radio-trigger---brix {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+  padding-right: 32px;
+  padding-left: 66px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px 2px rgba(19, 18, 66, 0.07);
+  -webkit-transition: border-width 200ms ease, border-color 200ms ease;
+  transition: border-width 200ms ease, border-color 200ms ease;
+  color: #170f49;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.multi-step-form-radio-trigger---brix:hover {
+  border-color: #bfbaff;
+}
+
+.submit-content-wrapper---brix {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.multi-step-form-button---brix {
+  left: auto;
+  top: 682px;
+  right: auto;
+  bottom: auto;
+  display: inline-block;
+  width: auto;
+  padding: 20px 40px;
+  border-radius: 500px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  color: #4a3aff;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.multi-step-form-button---brix:hover {
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}
+
+.multi-step-form-button---brix.left---brix {
+  left: -40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4a3aff;
+}
+
+.multi-step-form-button---brix.right---brix {
+  right: -40px;
+  background-color: #4a3aff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.blob {
+  position: absolute;
+  z-index: -1;
+}
+
+.blob._2 {
+  left: auto;
+  top: auto;
+  right: -18%;
+  bottom: 6%;
+  max-width: 50%;
+}
+
+.blob._1 {
+  left: -20%;
+  top: 8%;
+  right: auto;
+  bottom: auto;
+  max-width: 50%;
+}
+
+.steps-bar---brix {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-content---brix {
+  overflow: visible;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  border-top: 1px solid #d9dbe9;
+}
+
+.display-none {
+  display: none;
+}
+
+.radio-button-field {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 114px;
+  min-height: 114px;
+  margin-bottom: 0px;
+  padding: 48px 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.multi-step-foirm---success-message---brix {
+  min-height: 44vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 38px 38px 34px 0 rgba(74, 58, 255, 0.01),
+    0 1px 26px 0 rgba(20, 20, 43, 0.02), 0 16px 26px 0 rgba(19, 18, 66, 0.02);
+}
+
+.multi-step-form-text-field---brix {
+  min-height: 66px;
+  margin-bottom: 0px;
+  padding: 20px 60px 20px 20px;
+  border: 2px solid transparent;
+  border-radius: 500px;
+  background-color: #fff;
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background-position: 90% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 6px 0 rgba(19, 18, 66, 0.07);
+  -webkit-transition: color 400ms ease, border-color 400ms ease, all 400ms ease;
+  transition: color 400ms ease, border-color 400ms ease, all 400ms ease;
+  color: #170f49;
+  font-size: 18px;
+}
+
+.multi-step-form-text-field---brix:hover {
+  border-color: #4a3aff;
+  box-shadow: 0 4px 10px 0 rgba(19, 18, 66, 0.12);
+}
+
+.multi-step-form-text-field---brix:focus {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4a3aff;
+  color: #4a3aff;
+}
+
+.multi-step-form-text-field---brix::-webkit-input-placeholder {
+  color: #6f6c90;
+  font-size: 18px;
+}
+
+.multi-step-form-text-field---brix:-ms-input-placeholder {
+  color: #6f6c90;
+  font-size: 18px;
+}
+
+.multi-step-form-text-field---brix::-ms-input-placeholder {
+  color: #6f6c90;
+  font-size: 18px;
+}
+
+.multi-step-form-text-field---brix::placeholder {
+  color: #6f6c90;
+  font-size: 18px;
+}
+
+.multi-step-form-text-field---brix.name-icon---brix {
+  background-image: none;
+  background-position: 90% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.multi-step-form-text-field---brix.name-icon---brix:hover {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.name-icon---brix:focus {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.company-icon---brix {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.company-icon---brix:hover {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.company-icon---brix:focus {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.email-icon---brix {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.email-icon---brix:hover {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.email-icon---brix:focus {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.phone-icon---brix {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.phone-icon---brix:hover {
+  background-image: none;
+}
+
+.multi-step-form-text-field---brix.phone-icon---brix:focus {
+  background-image: none;
+}
+
+.multi-step-form-grid-item---brix {
+  overflow: visible;
+}
+
+.multi-step-form-label---brix {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  color: #170f49;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.multi-step-form-label---brix.no-margin---brix {
+  margin-bottom: 0px;
+}
+
+.radio-button {
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  margin-top: 0px;
+  margin-right: 12px;
+  margin-left: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-style: solid;
+  border-width: 1.2px;
+  border-color: #d9dbe9;
+  box-shadow: inset 0 0 7px 0 rgba(20, 20, 43, 0.08);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.radio-button.w--redirected-checked {
+  border-width: 7px;
+  border-color: #4a3aff;
+}
+
+.radio-button.w--redirected-focus {
+  box-shadow: 0 0 3px 1px rgba(74, 58, 255, 0.2);
+}
+
+.slider---brix {
+  position: relative;
+  height: 100%;
+  max-width: 750px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.checkbox-item--brix {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  max-height: 114px;
+  min-height: 114px;
+  margin-bottom: 0px;
+  padding: 25px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #170f49;
+}
+
+.first-step-grid---brix {
+  grid-column-gap: 28px;
+  grid-row-gap: 44px;
+}
+
+.first-step-grid---brix.uniform-space---brix {
+  overflow: visible;
+  grid-row-gap: 28px;
+}
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -4320,6 +5024,32 @@ figcaption {
 
   .licensing-device-image {
     max-height: 250px;
+  }
+
+  .cloneable-container-default {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .multi-step-form-radio-trigger---brix {
+    padding-right: 24px;
+    padding-left: 64px;
+    font-size: 16px;
+  }
+
+  .blob._2 {
+    bottom: 11%;
+    max-width: 60%;
+  }
+
+  .blob._1 {
+    left: -25%;
+    top: 13%;
+    max-width: 60%;
+  }
+
+  .radio-button-field {
+    padding: 40px 24px;
   }
 }
 
@@ -4632,6 +5362,148 @@ figcaption {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
+  .form-step-progress-bar-mobile---brix {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    max-width: 100%;
+    border-radius: 500px;
+  }
+
+  .form-step-progress-bar-mobile---brix.step-3---brix {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #4a3aff;
+  }
+
+  .form-step-progress-bar-mobile---brix.full-bar---brix {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #4a3aff;
+  }
+
+  .form-step-progress-bar-mobile---brix.step-1---brix {
+    width: 22%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #4a3aff;
+  }
+
+  .form-step-progress-bar-mobile---brix.step-2---brix {
+    width: 50%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #4a3aff;
+  }
+
+  .form-step-number---brix {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .multi-step-form---brix {
+    padding-right: 32px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+  }
+
+  .form-step-progress-bar---brix {
+    display: none;
+  }
+
+  .slide---brix {
+    padding-bottom: 8px;
+  }
+
+  .multi-step-form-error-message---brix {
+    margin-top: 170px;
+  }
+
+  .multi-step-form-block---brix {
+    min-height: auto;
+  }
+
+  .cloneable-container-default {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .submit-content-wrapper---brix {
+    margin-top: 32px;
+  }
+
+  .multi-step-form-button---brix {
+    top: 990px;
+  }
+
+  .multi-step-form-button---brix.left---brix {
+    left: -32px;
+  }
+
+  .multi-step-form-button---brix.left---brix.preview-page {
+    top: 960px;
+  }
+
+  .multi-step-form-button---brix.right---brix {
+    right: -32px;
+  }
+
+  .multi-step-form-button---brix.right---brix.preview-page {
+    top: 960px;
+  }
+
+  .blob._2 {
+    bottom: 9%;
+  }
+
+  .blob._1 {
+    max-width: 80%;
+  }
+
+  .steps-bar---brix {
+    padding-bottom: 24px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .form-content---brix {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .steps-bar-wrapper--brix {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .first-step-grid---brix {
+    grid-row-gap: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .first-step-grid---brix.uniform-space---brix {
+    grid-row-gap: 24px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4826,6 +5698,119 @@ figcaption {
   .licensing-images-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .form-step-progress-bar-mobile---brix {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .form-step-progress-bar-mobile---brix.step-3---brix {
+    width: 78%;
+  }
+
+  .form-step-progress-bar-mobile---brix.full-bar---brix {
+    width: 100%;
+  }
+
+  .form-step-progress-bar-mobile---brix.step-1---brix {
+    width: 25%;
+  }
+
+  .multi-step-form---brix {
+    padding-right: 0px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+  }
+
+  .form-step-progress-bar---brix {
+    display: none;
+  }
+
+  .multi-step-form-error-message---brix {
+    margin-top: 32px;
+  }
+
+  .container-default {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .select-item-icon---brix {
+    max-width: 24%;
+  }
+
+  .cloneable-container-default {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .multi-step-form-radio-trigger---brix {
+    padding-right: 16px;
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .multi-step-form-button---brix {
+    font-size: 16px;
+  }
+
+  .multi-step-form-button---brix.left---brix {
+    position: static;
+    left: auto;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .multi-step-form-button---brix.right---brix {
+    position: static;
+    right: auto;
+    display: block;
+  }
+
+  .blob._2 {
+    right: -35%;
+    bottom: 11%;
+    max-width: 120%;
+  }
+
+  .blob._1 {
+    left: -41%;
+    top: 16%;
+    max-width: 120%;
+  }
+
+  .steps-bar---brix {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .radio-button-field {
+    padding: 40px 20px;
+  }
+
+  .multi-step-form-label---brix {
+    font-size: 16px;
+  }
+
+  .first-step-grid---brix {
+    margin-bottom: 32px;
+  }
+
+  .first-step-grid---brix.uniform-space---brix {
+    grid-row-gap: 16px;
   }
 }
 
