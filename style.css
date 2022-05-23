@@ -4335,7 +4335,7 @@ figcaption {
   padding-top: 75px;
   padding-bottom: 200px;
   border-radius: 20px;
-  background-color: #f7f7fb;
+  background-color: rgba(247, 247, 251, 0);
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
