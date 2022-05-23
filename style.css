@@ -4186,7 +4186,7 @@ figcaption {
 }
 
 .form-step-number---brix.completed---brix {
-  background-color: #4a3aff;
+  background-color: #60aef8;
   color: #fff;
   font-weight: 700;
 }
@@ -4284,7 +4284,7 @@ figcaption {
 
 .form-step-progress-bar---brix.current-step---brix {
   width: 50%;
-  background-color: #4a3aff;
+  background-color: #fa5853;
 }
 
 .slide---brix {
@@ -4471,6 +4471,10 @@ figcaption {
   background-color: #4a3aff;
   color: #fff;
   font-weight: 700;
+}
+
+.multi-step-form-button---brix.right---brix.preview-page {
+  background-color: #60aef8;
 }
 
 .blob {
