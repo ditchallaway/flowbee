@@ -1,4 +1,4 @@
-site: {{site}}/
+site: false
 # pages: false
 # OR
 # pages:
