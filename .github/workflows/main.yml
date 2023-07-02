@@ -1,4 +1,4 @@
-name: webflow-git
+name: webjive-git
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   track:
-    name: Track Webflow site changes
+    name: Track webjive site changes
 
     runs-on: ubuntu-latest
 
@@ -20,12 +20,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Process Webflow Site
-        uses: loomchild/webflow-get@v1.2
+      - name: Process webjive Site
+        uses: loomchild/webjive-get@v1.2
 
       - name: Commit and Push
         uses: EndBug/add-and-commit@v7
         with:
-          author_name: Webflow Git
-          author_email: webflowgit@local
+          author_name: webjive Git
+          author_email: webjivegit@local
           message: 'Site updated'
